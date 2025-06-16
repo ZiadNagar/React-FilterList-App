@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Uncle Mohamed",
+    "category": "Boss",
+    "email": "unc.mohamed@nweave.com"
+  },
+  {
+    "id": 2,
+    "name": "Abdelrahamn",
+    "category": "Leader",
+    "email": "abdelrahman@nweave.com"
+  },
+  {
+    "id": 3,
+    "name": "Hinedy",
+    "category": "Developer",
+    "email": "hinedy@nweave.com"
+  },
+  {
+    "id": 4,
+    "name": "Jiwily",
+    "category": "Developer",
+    "email": "jiwily@nweave.com"
+  },
+  {
+    "id": 5,
+    "name": "Desha",
+    "category": "Developer",
+    "email": "desha@nweave.com"
+  },
+  {
+    "id": 6,
+    "name": "ZEZO",
+    "category": "Developer",
+    "email": "zezo@nweave.com"
+  },
+  {
+    "id": 7,
+    "name": "Ali",
+    "category": "Developer",
+    "email": "ali@nweave.com"
+  },
+  {
+    "id": 8,
+    "name": "Mostafa",
+    "category": "Developer",
+    "email": "mostafa@nweave.com"
+  },
+  {
+    "id": 9,
+    "name": "Reem",
+    "category": "Designer",
+    "email": "reem@nweave.com"
+  },
+  {
+    "id": 10,
+    "name": "Amira",
+    "category": "Tester",
+    "email": "amira@nweave.com"
+  }
+]

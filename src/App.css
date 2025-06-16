@@ -1,0 +1,23 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.App-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.App-header h1 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.App-header p {
+  color: #cccccc;
+  font-size: 1.1rem;
+}
