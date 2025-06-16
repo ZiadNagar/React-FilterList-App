@@ -7,7 +7,11 @@
   },
   {
     "id": 2,
+<<<<<<< HEAD
     "name": "Abdelrahman",
+=======
+    "name": "Abdelrahaman",
+>>>>>>> e341920312bfed9a43369d0d8cf2ba55142e6a66
     "category": "Leader",
     "email": "abdelrahman@nweave.com"
   },
