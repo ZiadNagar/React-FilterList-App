@@ -1,6 +1,6 @@
 # React Filter List App
 
-A simple React application that demonstrates filtering a list of items based on user input.
+A simple React application that demonstrates filtering a list of items based on user input
 
 ## What you'll learn
 
