@@ -4,20 +4,41 @@ import ItemList from "./ItemList";
 import "./FilteredList.css";
 
 function FilteredList({ items }) {
-  // Initialize state from URL parameters
-  const getInitialSearchTerm = () => {
+  // Initialize state from URL parameters synchronously
+  const getInitialState = () => {
     const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get("search") || "";
+    const searchTerm = urlParams.get("search") || "";
+    const selectedCategory = urlParams.get("category") || "All";
+
+    // Apply filters immediately during initialization
+    let filteredItems = items;
+
+    if (searchTerm) {
+      filteredItems = filteredItems.filter(
+        (item) =>
+          item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          item.email.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
+
+    if (selectedCategory !== "All") {
+      filteredItems = filteredItems.filter(
+        (item) => item.category === selectedCategory
+      );
+    }
+
+    return { searchTerm, selectedCategory, filteredItems };
   };
 
-  const getInitialCategory = () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get("category") || "All";
-  };
+  const initialState = getInitialState();
 
-  const [searchTerm, setSearchTerm] = useState(getInitialSearchTerm);
-  const [selectedCategory, setSelectedCategory] = useState(getInitialCategory);
-  const [filteredItems, setFilteredItems] = useState(items);
+  const [searchTerm, setSearchTerm] = useState(initialState.searchTerm);
+  const [selectedCategory, setSelectedCategory] = useState(
+    initialState.selectedCategory
+  );
+  const [filteredItems, setFilteredItems] = useState(
+    initialState.filteredItems
+  );
   const [categories, setCategories] = useState([]);
 
   // Update URL when search term or category changes
